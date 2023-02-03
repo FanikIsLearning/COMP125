@@ -1,0 +1,70 @@
+body {
+    font-family: Verdana;
+    color: white;
+    background-color: #44433E;
+    font-size: 20px;
+}
+
+div {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    padding-bottom: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+
+th {
+    border: 1px solid white;
+    padding: 8px;
+    background-color: rgb(133, 197, 176);
+    color: #44433E;
+}
+
+thead th {
+    width: 25%;
+}
+
+td {
+    border: 1px solid white;
+    padding: 8px;
+    background-color: rgb(88, 75, 101);
+    text-align: center;
+}
+
+.form{
+    padding-bottom: 30px;
+}
+
+input{
+    font-size: 20px;
+    width: 100%;
+}
+
+footer{
+    padding-top: 30px;
+}
+
+.button{
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    border-style: solid;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #D4DF37;
+    color: #44433E;
+    border-color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
