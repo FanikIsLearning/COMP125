@@ -1,0 +1,100 @@
+CSS:
+
+{
+box-sizing: border-box;
+}
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+header {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 1rem;
+}
+
+h1 {
+margin: 0;
+}
+
+main {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 2rem;
+}
+
+figure {
+margin: 0;
+position: relative;
+}
+
+figcaption {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.5);
+color: #fff;
+padding: 0.5rem;
+}
+
+#mainImage {
+max-width: 100%;
+}
+
+button {
+margin-top: 1rem;
+padding: 0.5rem 1rem;
+border: none;
+background-color: #333;
+color: #fff;
+cursor: pointer;
+}
+
+button:disabled {
+background-color: #ccc;
+color: #555;
+cursor: default;
+}
+
+#favoritesArea {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin-top: 2rem;
+}
+
+#favoritesArea img {
+margin: 0.5rem;
+max-width: 100%;
+max-height: 100px;
+object-fit: cover;
+}
+
+#favoritesArea button {
+margin: 0.5rem;
+padding: 0.25rem 0.5rem;
+border: none;
+background-color: #333;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+}
+
+#favoritesArea button:hover {
+background-color: #555;
+}
+
+footer {
+background-color: #eee;
+text-align: center;
+padding: 1rem;
+}
+
+p {
+margin: 0;
+}

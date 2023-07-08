@@ -11,15 +11,18 @@ document.getElementById("createTable").addEventListener("click", function() {
   for (let i = 0; i<= columns; i++) {
     let cell = document.createElement("th");
 
-    if (i == 0)
+    /*if (i == 0)
     {
       cell.innerHTML = "&#127773;";
     }
     else if (i > 0)
     {
       cell.innerHTML = i;
-    }
+    }*/
 
+    //trying conditional operator
+    let filter = (i == 0) ? cell.innerHTML = "&#127773;" : cell.innerHTML = i;
+    //console.log(filter);
     colTitle.appendChild((cell));
     table.appendChild(colTitle);
   }

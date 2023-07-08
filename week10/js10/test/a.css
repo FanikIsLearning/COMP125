@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.bug {
+    width: 30px;
+    height: 30px;
+    background-color: #ff0000;
+    position: absolute;
+}
+
+.score {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+button {
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

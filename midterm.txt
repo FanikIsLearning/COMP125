@@ -1,0 +1,11 @@
+File name,
+No default table,
+The name of the javascript file was incorrect,
+Check the name,
+And grades,
+Previous semester,
+Submited as word file, no expected format,
+Similar assignments.
+
+First part = multiple choice
+Second part = hands on

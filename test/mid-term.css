@@ -1,0 +1,56 @@
+body {
+    font-family: Verdana;
+    color: white;
+    background-color: #44433E;
+    font-size: 20px;
+}
+
+div {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type=text], select {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input:invalid {
+    border-color: red;
+    background-color: pink;
+}
+  
+input:valid {
+    border-color: rgb(72, 209, 72);
+}
+  

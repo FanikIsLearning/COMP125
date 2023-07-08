@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FAN HOI KIT, Ivan 301249275 - Mid-Term</title>
+    <link rel="stylesheet" href="mid-term.css">
+    <script src="mid-term.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <h1>Billing and Delivery Form</h1>
+        <form class="form" id="billingForm">
+            <h2>Billing Address</h2>
+            <div class="container">
+                <label for="firstnameBill">First Name:</label>
+                <input type="text" id="firstnameBill" name="firstnameBill" placeholder="First Name" required>
+            </div>
+            <div class="container">
+                <label for="lastnameBill">Last Name:</label>
+                <input type="text" id="lastnameBill" name="lastnameBill" placeholder="Last Name" required>
+            </div>
+            <div class="container">
+                <label for="addressBill">Address:</label>
+                <input type="text" id="addressBill" name="addressBill" placeholder="Address" required>
+            </div>
+            <div class="container">
+                <label for="cityBill">City:</label>
+                <input type="text" id="cityBill" name="cityBill" placeholder="City" required>
+            </div>
+            <div class="container">
+                <label for="stateBill">State:</label>
+                <select id="stateBill" name="stateBill" required>
+                    <option value="">--select state--</option>
+                    <option value="ON">ON</option>
+                    <option value="QC">QC</option>
+                    <option value="MB">MB</option>
+                    <option value="SK">SK</option>
+                </select>
+            </div>
+            <div class="container">
+                <label for="genderBill">Gender:</label>
+                <select id="genderBill" name="genderBill" required>
+                    <option value="">--gender--</option>
+                    <option value="MALE">MALE</option>
+                    <option value="FEMALE">FEMALE</option>
+                </select>
+            </div>
+            <div class="container">
+                <label for="phoneBill">Phone:</label>
+                <input type="text" id="phoneBill" name="phoneBill" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+            <div class="container">
+                <label for="codeBill">Zip:</label>
+                <input type="text" id="codeBill" name="codeBill" placeholder="000000" required>
+            </div>
+            <br>
+
+            <hr>
+
+            <h2>Delivery Address</h2>
+            <div>
+                <input type="checkbox" id="useBill" name="useBill">
+                <label for="useBill">Same as Billing Address</label>
+            </div>
+            <div class="container">
+            <label for="firstnameDelivery">First Name:</label>
+            <input type="text" id="firstnameDelivery" name="firstnameDelivery" placeholder="First Name" required>
+            </div>
+            <div class="container">
+            <label for="lastnameDelivery">Last Name:</label>
+            <input type="text" id="lastnameDelivery" name="lastnameDelivery" placeholder="Last Name" required>
+            </div>
+            <div class="container">
+            <label for="addressDelivery">Address:</label>
+            <input type="text" id="addressDelivery" name="addressDelivery" placeholder="Address" required>
+            </div>
+            <div class="container">
+            <label for="cityDelivery">City:</label>
+            <input type="text" id="cityDelivery" name="cityDelivery" placeholder="City" required>
+            </div>
+            <div class="container">
+            <label for="stateDelivery">State:</label>
+            <select id="stateDelivery" name="stateDelivery" required>
+                <option value="">--select state--</option>
+                <option value="ON">ON</option>
+                <option value="QC">QC</option>
+                <option value="MB">MB</option>
+                <option value="SK">SK</option>
+            </select>
+            </div>
+            <div class="container">
+            <label for="genderDelivery">Gender:</label>
+            <select id="genderDelivery" name="genderDelivery" required>
+                <option value="">--gender--</option>
+                <option value="MALE">MALE</option>
+                <option value="FEMALE">FEMALE</option>
+            </select>
+            </div>
+            <div class="container">
+            <label for="phoneDelivery">Phone:</label>
+            <input type="text" id="phoneDelivery" name="phoneDelivery" placeholder="123-456-7890" required>
+            </div>
+            <div class="container">
+            <label for="codeDelivery">Zip:</label>
+            <input type="text" id="codeDelivery" name="codeDelivery" placeholder="000000" required>
+            </div>
+            <br>
+
+            <div id="errorBox"></div>
+            <input type="submit" class="button" value="Submit">
+        </form>
+
+    </div>
+</body>

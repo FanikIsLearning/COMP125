@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #gallery {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #gallery figcaption {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        #info-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        #info-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+        }
+
+        #info-filename {
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        #info-duration {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        #close-info {
+            display: inline-block;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            line-height: 1;
+            margin-top: 0.5rem;
+            cursor: pointer;
+        }
+
+        #controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+
+        #controls button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 0.2rem;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        #controls button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gallery">
+        <figure>
+            <img id="image" alt="">
+            <figcaption id="caption"></figcaption>
+            <div id="info-overlay">
+                <div id="info-content">
+                    <span id="info-filename"></span>
+                    <span id="info-duration"></span>
+                    <button id="close-info">&times;</button>
+                </div>
+            </div>
+        </figure>
+        <div id="controls">
+            <button id="previous">&lt; Prev</button>
+            <button id="next">Next &gt;</button>
+            <button id="update">Update</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="a.js"></script>
+</body>
+
+</html>
